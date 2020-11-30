@@ -1,4 +1,5 @@
 import React from "react";
+import Formulario from "./components/Formulario";
 import styled from '@emotion/styled';
 import imagen from './cryptomonedas.png';
 
@@ -48,6 +49,7 @@ function App() {
 			<Heading>
 				Cotiza Criptomendas al instante
 			</Heading>
+			<Formulario />
 		</Contenedor>
 	);
 }
