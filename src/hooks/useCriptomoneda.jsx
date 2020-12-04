@@ -22,6 +22,7 @@ const Select = styled.select`
 `
 
 const useCriptomoneda = (label, stateInicial, opciones) => {
+    console.log(opciones)
 
     //* state del custom hook
     const [state, actualizarState] = useState(stateInicial)
