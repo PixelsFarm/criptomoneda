@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react'
+import useMoneda from '../hooks/useMoneda'
 import styled from '@emotion/styled';
 
 const Boton = styled.input`
@@ -20,8 +21,16 @@ const Boton = styled.input`
 `
 
 const Formulario = () => {
+
+    //* sacamos datos de useMoneda
+    const [ moneda, SelectMonedas, actualizarState ] = useMoneda();
+    console.log(SelectMonedas)
+
+
     return (
         <form>
+            <SelectMonedas />
+
             <Boton 
                 type="submit"
                 value="Calcular"
